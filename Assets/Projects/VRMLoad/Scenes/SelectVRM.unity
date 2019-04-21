@@ -468,7 +468,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Select VRM
 --- !u!222 &1105507250
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -672,3 +672,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec7aace0081bea943933a7ee5526e2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_button: {fileID: 972091956}
