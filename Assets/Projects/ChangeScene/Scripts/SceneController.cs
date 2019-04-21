@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
+    public string path = "";
     // Sceneの呼び出し前に呼ばれるようにする
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void InitializeBeforeSceneLoad()
@@ -12,7 +13,10 @@ public class SceneController : MonoBehaviour
         controller.AddComponent<SceneController>();
         DontDestroyOnLoad(controller);
     }
-
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
     // Start is called before the first frame update
     void Start()
     {
