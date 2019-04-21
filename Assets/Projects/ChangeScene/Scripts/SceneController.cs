@@ -28,7 +28,7 @@ public class SceneController : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            SceneManager.LoadScene("First");
+            SceneManager.LoadScene("SelectVRM");
         }
         if (Input.GetKeyUp(KeyCode.Return))
         {
